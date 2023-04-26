@@ -56,15 +56,39 @@
 		E042BA3329F90E370084D721 /* TaskManager */ = {
 			isa = PBXGroup;
 			children = (
-				E042BA3429F90E370084D721 /* AppDelegate.swift */,
-				E042BA3629F90E370084D721 /* SceneDelegate.swift */,
-				E042BA3829F90E370084D721 /* ViewController.swift */,
-				E042BA3A29F90E370084D721 /* Main.storyboard */,
+				E042BA4929F90E940084D721 /* App */,
+				E042BA4A29F90EA00084D721 /* ViewControllers */,
+				E042BA4829F90E840084D721 /* Storyboard */,
 				E042BA3D29F90E3C0084D721 /* Assets.xcassets */,
-				E042BA3F29F90E3C0084D721 /* LaunchScreen.storyboard */,
-				E042BA4229F90E3C0084D721 /* Info.plist */,
 			);
 			path = TaskManager;
+			sourceTree = "<group>";
+		};
+		E042BA4829F90E840084D721 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				E042BA3A29F90E370084D721 /* Main.storyboard */,
+				E042BA3F29F90E3C0084D721 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		E042BA4929F90E940084D721 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E042BA4229F90E3C0084D721 /* Info.plist */,
+				E042BA3429F90E370084D721 /* AppDelegate.swift */,
+				E042BA3629F90E370084D721 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		E042BA4A29F90EA00084D721 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E042BA3829F90E370084D721 /* ViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,7 +313,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = C87Q7272PH;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TaskManager/Info.plist;
+				INFOPLIST_FILE = TaskManager/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -302,9 +326,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Khusein.TaskManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -317,7 +344,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = C87Q7272PH;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TaskManager/Info.plist;
+				INFOPLIST_FILE = TaskManager/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -330,9 +357,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Khusein.TaskManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
