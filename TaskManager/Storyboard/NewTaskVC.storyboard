@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--New Task View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                <viewController id="Y6W-OH-hqX" customClass="NewTaskViewController" customModule="TaskManager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -72,6 +72,9 @@
                                         <state key="normal" title="Add new task">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="addingButtonTapped" destination="Y6W-OH-hqX" eventType="touchUpInside" id="j2t-dO-TPw"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aMd-Fj-EBT">
                                         <rect key="frame" x="0.0" y="440" width="288" height="30"/>
@@ -91,6 +94,11 @@
                             <constraint firstItem="Jgj-YI-zyM" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="cbK-Yf-Sgs"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="datePicker" destination="pSR-Zm-mZr" id="ynH-hI-LAy"/>
+                        <outlet property="segmentedControl" destination="qzg-Yz-Eeg" id="hFe-Wx-smQ"/>
+                        <outlet property="textView" destination="spl-EF-LUd" id="iaa-Z5-etc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

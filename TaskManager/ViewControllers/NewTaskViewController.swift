@@ -9,21 +9,36 @@ import UIKit
 
 class NewTaskViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
+    @IBOutlet var textView: UITextView!
+    @IBOutlet var segmentedControl: UISegmentedControl!
+    @IBOutlet var datePicker: UIDatePicker!
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        view.endEditing(true)
     }
-    */
-
+ 
+    @IBAction func addingButtonTapped() {
+        let task = Task(
+            name: textView.text,
+            category: setTaskCategory(),
+            isCompleted: false,
+            date: datePicker.date
+        )
+    }
+        @IBAction func cancelButtonTapped() {
+            dismiss(animated: true)
+        }
+    
+    private func setTaskCategory() -> CategoryTask {
+        var category: CategoryTask = .home
+        
+        switch segmentedControl.selectedSegmentIndex {
+        case 0: category = .home
+        case 1: category = .work
+        default: category = .familly
+        }
+        
+        return category
+    }
 }
