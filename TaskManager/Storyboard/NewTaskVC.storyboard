@@ -72,6 +72,11 @@
                                         <state key="normal" title="Add new task">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="addingButtonTapped" destination="Y6W-OH-hqX" eventType="touchUpInside" id="j2t-dO-TPw"/>
                                         </connections>

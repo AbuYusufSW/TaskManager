@@ -7,7 +7,7 @@
 
 import UIKit
 
-class NewTaskViewController: UIViewController {
+final class NewTaskViewController: UIViewController {
 
     @IBOutlet var textView: UITextView!
     @IBOutlet var segmentedControl: UISegmentedControl!
